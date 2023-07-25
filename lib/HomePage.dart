@@ -59,7 +59,20 @@ class _DashbordState extends State<Dashbord> {
                     ),
                     const SizedBox(
                       width: 20,
-                    )
+                    ),
+                    Container(
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(500),
+                        border: Border.all(width: 2, color: Colors.black),
+                      ),
+                      child: const Center(
+                        child: Icon(Icons.person, color: Colors.black,),
+                      ),
+                    ),
+
                   ],
                 )
               ],
