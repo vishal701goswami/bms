@@ -15,12 +15,11 @@ class _DashbordState extends State<Dashbord> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: false,
-        title: Text("Profile", style: GoogleFonts.montserrat(
-            color: Colors.black,
-            fontSize: 20
-          ),),
+        title: Text(
+          "Profile",
+          style: GoogleFonts.montserrat(color: Colors.black, fontSize: 20),
+        ),
       ),
     );
-
   }
 }
