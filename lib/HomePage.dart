@@ -44,8 +44,8 @@ class _DashbordState extends State<Dashbord> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      height: 50,
-                      width: 50,
+                      height: 45,
+                      width: 45,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(500),
@@ -59,7 +59,43 @@ class _DashbordState extends State<Dashbord> {
                       ),
                     ),
                     const SizedBox(
-                      width: 20,
+                      width: 10,
+                    ),
+                    Container(
+                      height: 45,
+                      width: 45,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(500),
+                        border: Border.all(width: 2, color: Colors.black),
+                      ),
+                      child: const Center(
+                        child: Icon(
+                          Icons.person,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      height: 45,
+                      width: 45,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(500),
+                        border: Border.all(width: 2, color: Colors.black),
+                      ),
+                      child: const Center(
+                        child: Icon(
+                          Icons.person,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 30,
                     ),
                     Container(
                       height: 50,
@@ -75,6 +111,14 @@ class _DashbordState extends State<Dashbord> {
                           color: Colors.black,
                         ),
                       ),
+                    ),
+                    Icon(
+                      Icons.keyboard_arrow_down_outlined,
+                      color: Colors.black,
+                      size: 25,
+                    ),
+                    SizedBox(
+                      width: 60,
                     ),
                   ],
                 )
