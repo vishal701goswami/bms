@@ -44,16 +44,27 @@ class _DashbordState extends State<Dashbord> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      height: 45,
-                      width: 45,
+                      height: 38,
+                      width: 38,
                       decoration: BoxDecoration(
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Color.fromARGB(255, 49, 49, 49),
+                            blurRadius: 0.0, // soften the shadow
+                            spreadRadius: 0.01, //extend the shadow
+                            offset: Offset(
+                              0.0, // Move to right 10  horizontally
+                              2.0, // Move to bottom 10 Vertically
+                            ),
+                          )
+                        ],
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(500),
                         border: Border.all(width: 2, color: Colors.black),
                       ),
                       child: const Center(
                         child: Icon(
-                          Icons.person,
+                          Icons.calendar_month_outlined,
                           color: Colors.black,
                         ),
                       ),
@@ -62,24 +73,64 @@ class _DashbordState extends State<Dashbord> {
                       width: 10,
                     ),
                     Container(
-                      height: 45,
-                      width: 45,
+                      height: 38,
+                      width: 38,
                       decoration: BoxDecoration(
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Color.fromARGB(255, 49, 49, 49),
+                            blurRadius: 0.0, // soften the shadow
+                            spreadRadius: 0.01, //extend the shadow
+                            offset: Offset(
+                              0.0, // Move to right 10  horizontally
+                              2.0, // Move to bottom 10 Vertically
+                            ),
+                          )
+                        ],
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(500),
                         border: Border.all(width: 2, color: Colors.black),
                       ),
                       child: const Center(
                         child: Icon(
-                          Icons.person,
+                          Icons.notifications_none_outlined,
                           color: Colors.black,
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Container(
+                      height: 38,
+                      width: 38,
+                      decoration: BoxDecoration(
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Color.fromARGB(255, 49, 49, 49),
+                            blurRadius: 0.0, // soften the shadow
+                            spreadRadius: 0.01, //extend the shadow
+                            offset: Offset(
+                              0.0, // Move to right 10  horizontally
+                              2.0, // Move to bottom 10 Vertically
+                            ),
+                          )
+                        ],
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(500),
+                        border: Border.all(width: 2, color: Colors.black),
+                      ),
+                      child: const Center(
+                        child: Icon(
+                          Icons.sms_outlined,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 30,
+                    ),
+                    Container(
                       height: 45,
                       width: 45,
                       decoration: BoxDecoration(
@@ -94,30 +145,12 @@ class _DashbordState extends State<Dashbord> {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      width: 30,
-                    ),
-                    Container(
-                      height: 50,
-                      width: 50,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(500),
-                        border: Border.all(width: 2, color: Colors.black),
-                      ),
-                      child: const Center(
-                        child: Icon(
-                          Icons.person,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                    Icon(
+                    const Icon(
                       Icons.keyboard_arrow_down_outlined,
                       color: Colors.black,
                       size: 25,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 60,
                     ),
                   ],
