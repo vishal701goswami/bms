@@ -15,8 +15,8 @@ class _HomePageLeftState extends State<HomePageLeft> {
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Expanded(
               child: SizedBox(

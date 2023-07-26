@@ -178,6 +178,8 @@ class _DashbordState extends State<Dashbord> {
             Center(
               child: Container(
                   child: const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Expanded(
                     child: HomePageLeft(),
