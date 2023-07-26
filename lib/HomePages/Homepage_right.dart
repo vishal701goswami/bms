@@ -19,7 +19,7 @@ class _HomePageRightState extends State<HomePageRight> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Payable & Owing",
+            "Payable & Owings",
             style: GoogleFonts.montserrat(
               fontSize: 25,
               fontWeight: FontWeight.bold,
@@ -40,9 +40,7 @@ class _HomePageRightState extends State<HomePageRight> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Row(
-                    children: [
-                     
-                    ],
+                    children: [],
                   )
                 ],
               )),
