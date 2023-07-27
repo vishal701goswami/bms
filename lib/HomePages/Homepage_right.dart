@@ -1,3 +1,4 @@
+import 'package:bmsdashbord/test.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -25,8 +26,30 @@ class _HomePageRightState extends State<HomePageRight> {
               fontWeight: FontWeight.bold,
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 240,
+              width: 700,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(width: 1, color: Colors.black),
+                boxShadow: const [
+                  BoxShadow(
+                      color: Colors.grey,
+                      blurRadius: 1.0,
+                      spreadRadius: 2.0,
+                      offset: Offset(
+                        5.0, // Move to right 7.0 horizontally
+                        6.0, // Move to bottom 8.0 Vertically
+                      ))
+                ],
+              ),
+              child: LinePage(),
+            ),
+          ),
           const SizedBox(
-            height: 240,
+            height: 10,
           ),
           Container(
               height: MediaQuery.of(context).size.height,
